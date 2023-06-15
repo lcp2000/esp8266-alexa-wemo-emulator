@@ -69,7 +69,7 @@ void WemoManager::serverLoop(){
     // Serial.println("----------");
     // Serial.println(request);
     // Serial.println("-----------");
-    if(request.indexOf('M-SEARCH') > 0) {
+    if(request.indexOf("M-SEARCH") > 0) {
         if((request.indexOf("urn:Belkin:device:**") > 0) || (request.indexOf("ssdp:all") > 0) || (request.indexOf("upnp:rootdevice") > 0)) {
           Serial.println("Got UDP Belkin Request..");
 
